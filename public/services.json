@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "service_name": "Radiographs",
+    "img": "https://i.ibb.co/zSmZm7h/service-radiograph.jpg",
+    "description": "Apple is reportedly planning to declare three models of MacBook obsolete in April. MacRumors reports that Apple is going to add the 11-inch MacBook Air, 13-inch MacBook Air, and 13-inch MacBook Pro models released in early 2014 to its obsolete products list this month. The move would hardly come as a surprise. Apple has released new versions of the 13-inch MacBook Air and MacBook Pro—most notably with its custom silicon—in the last eight years.",
+    "ratings": "580"
+  },
+  {
+    "id": 2,
+    "service_name": "Teeth Cleaning",
+    "img": "https://i.ibb.co/wCpkQ7B/teeth-cleaning.jpg",
+    "description": "Apple is thought to be planning a new, larger model of the MacBook Air, which will be released alongside an updated 13-inch model in late 2023. As 9To5Mac reports, the prediction comes from Display Supply Chain Consultants (DSCC), which just released its Quarterly Advanced IT Display Shipment and Technology report. The report suggests that Apple is planning to increase the size of the display in the 13.3-inch MacBook Air, but it would still remain under 14 inches.",
+    "price": "648"
+  },
+  {
+    "id": 3,
+    "service_name": "Teeth Whitening",
+    "img": "https://i.ibb.co/W5QZYPm/white-teeth.jpg",
+    "description": "Apple's M1 silicon debuted to great fanfare a year ago, infusing the entry-level 2020 MacBook Air with extraordinary computing power for a laptop of its size and price. At the time, the 13-inch MacBook Pro rang up as the lesser value, since it cost more but used the same M1 processor that the MacBook Air did. Apple now changes the equation—and opens up the Pro to a wider swath of content pros—with the 14-inch MacBook Pro (starts at $1,999; $2,899 as tested). ",
+    "price": "459"
+  }
+  
+]
