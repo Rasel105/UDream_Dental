@@ -6,16 +6,17 @@ import logo from '../../../images/logo-2.png'
 const Header = () => {
      return (
           <div>
-               <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+               <Navbar collapseOnSelect expand="lg" sticky='top' bg="dark" variant="dark">
                     <Container>
                          <Navbar.Brand as={Link} to='/'>
-                              <img style={{ width: "150px", height: '40px' }} src={logo} alt="" />
+                              <h3>UDreamDental</h3>
+                              {/* <img style={{ width: "150px", height: '40px' }} src={logo} alt="" /> */}
                          </Navbar.Brand>
                          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                          <Navbar.Collapse id="responsive-navbar-nav">
                               <Nav className="me-auto">
                                    <Nav.Link as={Link} href="#service" to="/service">Services</Nav.Link>
-                                   <Nav.Link href="#pricing">Pricing</Nav.Link>
+                                   <Nav.Link as={Link} to="/blog">Blogs</Nav.Link>
                               </Nav>
                               <Nav>
                                    <Nav.Link as={Link} to='/aboutme'>

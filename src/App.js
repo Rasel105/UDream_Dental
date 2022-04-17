@@ -4,8 +4,11 @@ import Header from './pages/Shared/Header/Header';
 import About from './pages/About/About'
 import Home from './pages/Home/Home/Home'
 import Login from './pages/Login/Login/Login'
-import Services from './pages/Home/Services/Services';
 import ServiceDetail from './pages/ServiceDetail/ServiceDetail';
+import Footer from './pages/Shared/Footer/Footer';
+import Checkout from './pages/Checkout/Checkout';
+import Blogs from './pages/Blogs/Blogs';
+
 function App() {
   return (
     <div>
@@ -16,7 +19,10 @@ function App() {
         <Route path='/aboutme' element={<About />}></Route>
         <Route path='/login' element={<Login />}></Route>
         <Route path='/service/:serviceId' element={<ServiceDetail />}></Route>
+        <Route path='/checkout' element={<Checkout />}></Route>
+        <Route path='/blog' element={<Blogs />}> </Route>
       </Routes>
+      <Footer />
     </div>
   );
 }
