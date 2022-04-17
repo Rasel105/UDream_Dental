@@ -8,6 +8,7 @@ import ServiceDetail from './pages/ServiceDetail/ServiceDetail';
 import Footer from './pages/Shared/Footer/Footer';
 import Checkout from './pages/Checkout/Checkout';
 import Blogs from './pages/Blogs/Blogs';
+import Register from './pages/Login/Register.js/Register';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='/home' element={<Home />}></Route>
         <Route path='/aboutme' element={<About />}></Route>
         <Route path='/login' element={<Login />}></Route>
+        <Route path='/register' element={<Register />}></Route>
         <Route path='/service/:serviceId' element={<ServiceDetail />}></Route>
         <Route path='/checkout' element={<Checkout />}></Route>
         <Route path='/blog' element={<Blogs />}> </Route>

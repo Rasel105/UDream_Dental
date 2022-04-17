@@ -15,26 +15,26 @@
   },
   {
     "id": 3,
-    "service_name": "Teeth Whitening",
+    "service_name": "Sports Guards",
     "img": "https://i.ibb.co/W5QZYPm/white-teeth.jpg",
     "description": "Apple's M1 silicon debuted to great fanfare a year ago, infusing the entry-level 2020 MacBook Air with extraordinary computing power for a laptop of its size and price. At the time, the 13-inch MacBook Pro rang up as the lesser value, since it cost more but used the same M1 processor that the MacBook Air did. Apple now changes the equation—and opens up the Pro to a wider swath of content pros—with the 14-inch MacBook Pro (starts at $1,999; $2,899 as tested). ",
-    "price": "459"
+    "price": "980"
   },
   
   {
     "id": 4,
-    "service_name": "Teeth Whitening",
-    "img": "https://i.ibb.co/W5QZYPm/white-teeth.jpg",
+    "service_name": "Teeth Implant",
+    "img": "https://i.ibb.co/G0L9bSK/Teeth-Implant.jpg",
     "description": "Apple's M1 silicon debuted to great fanfare a year ago, infusing the entry-level 2020 MacBook Air with extraordinary computing power for a laptop of its size and price. At the time, the 13-inch MacBook Pro rang up as the lesser value, since it cost more but used the same M1 processor that the MacBook Air did. Apple now changes the equation—and opens up the Pro to a wider swath of content pros—with the 14-inch MacBook Pro (starts at $1,999; $2,899 as tested). ",
-    "price": "459"
+    "price": "790"
   },
   
   {
     "id": 5,
-    "service_name": "Teeth Whitening",
-    "img": "https://i.ibb.co/W5QZYPm/white-teeth.jpg",
+    "service_name": "Teeth Filling",
+    "img": "https://i.ibb.co/CV2RCrT/Teeth-Filling.jpg",
     "description": "Apple's M1 silicon debuted to great fanfare a year ago, infusing the entry-level 2020 MacBook Air with extraordinary computing power for a laptop of its size and price. At the time, the 13-inch MacBook Pro rang up as the lesser value, since it cost more but used the same M1 processor that the MacBook Air did. Apple now changes the equation—and opens up the Pro to a wider swath of content pros—with the 14-inch MacBook Pro (starts at $1,999; $2,899 as tested). ",
-    "price": "459"
+    "price": "860"
   }
   
 ]
