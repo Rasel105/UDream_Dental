@@ -4,17 +4,20 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Header = () => {
      const [user] = useAuthState(auth);
 
      const hanldeSignOut = () => {
           signOut(auth);
+          toast("Signout Successfully!");
      };
 
      return (
           <div>
-               <Navbar collapseOnSelect expand="lg" sticky='top' bg="dark" variant="dark">
+               <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                     <Container>
                          <Navbar.Brand as={Link} to='/'>
                               <h3>UDreamDental</h3>
@@ -23,23 +26,24 @@ const Header = () => {
                          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                          <Navbar.Collapse id="responsive-navbar-nav">
                               <Nav className="me-auto">
-                                   <Nav.Link as={Link} to="/service">Services</Nav.Link>
-                                   <Nav.Link as={Link} to="/blog">Blogs</Nav.Link>
+                                   <Nav.Link className="fs-5" as={Link} to="/service">Services</Nav.Link>
+                                   <Nav.Link className="fs-5" as={Link} to="/blog">Blogs</Nav.Link>
                               </Nav>
                               <Nav>
-                                   <Nav.Link as={Link} to='/aboutme'>
+                                   <Nav.Link className="fs-5" as={Link} to='/aboutme'>
                                         About Me
                                    </Nav.Link>
                                    <Nav.Link>
                                         {
                                              user ?
-                                                  <p onClick={hanldeSignOut}>Logout</p>
+                                                  <p className="fs-5" onClick={hanldeSignOut}>Logout</p>
                                                   :
-                                                  <Link style={{ textDecoration: "none", color: "white" }} to='/login'>Login</Link>
+                                                  <Link style={{ textDecoration: "none", color: "gray" }} to='/login' className="fs-5" >Login</Link>
                                         }
                                    </Nav.Link>
                               </Nav>
                          </Navbar.Collapse>
+                         <ToastContainer />
                     </Container>
                </Navbar>
           </div>
