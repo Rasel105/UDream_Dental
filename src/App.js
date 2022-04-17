@@ -9,6 +9,7 @@ import Footer from './pages/Shared/Footer/Footer';
 import Checkout from './pages/Checkout/Checkout';
 import Blogs from './pages/Blogs/Blogs';
 import Register from './pages/Login/Register.js/Register';
+import NotFound from './pages/Shared/NotFound/NotFound'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/service/:serviceId' element={<ServiceDetail />}></Route>
         <Route path='/checkout' element={<Checkout />}></Route>
         <Route path='/blog' element={<Blogs />}> </Route>
+        <Route path='*' element={<NotFound />}></Route>
       </Routes>
       <Footer />
     </div>
