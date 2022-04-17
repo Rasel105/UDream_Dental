@@ -18,7 +18,7 @@ const Register = () => {
           user,
           loading,
           error,
-     ] = useCreateUserWithEmailAndPassword(auth);
+     ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
      if (loading) {
           return <Loading />
@@ -34,6 +34,7 @@ const Register = () => {
           const password = passwordRef.current.value;
           createUserWithEmailAndPassword(email, password);
           toast("Registation Successful!");
+          toast("Email Varification sent")
      }
 
      return (

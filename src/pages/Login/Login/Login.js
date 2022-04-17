@@ -42,6 +42,11 @@ const Login = () => {
           signInWithEmailAndPassword(email, password);
      }
 
+     let errorElement;
+     if (error) {
+          errorElement = <p className='text-danger'>Error: {error?.message}</p>
+     }
+
      const hanleForgetPassword = async () => {
           const email = emailRef.current.value;
           if (email) {
@@ -69,6 +74,8 @@ const Login = () => {
 
                          <div className="field-group">
                               <input className="btn-submit" type="submit" value="Log In" />
+
+                              {errorElement}
                               <p onClick={hanleForgetPassword} className="mt-3 mb-0 text-danger" style={{ cursor: "pointer" }}>Forgot?</p>
                          </div>
                     </form>
