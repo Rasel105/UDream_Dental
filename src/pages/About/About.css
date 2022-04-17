@@ -1,0 +1,6 @@
+.outercss {
+     border-radius: 30px;
+     background: #dfedde;
+     box-shadow: 27px 27px 44px #595f59,
+          -27px -27px 44px #ffffff;
+}
