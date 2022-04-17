@@ -7,7 +7,6 @@ const Checkout = () => {
      return (
           <div>
                <h2>Hello This is CheckOut {serviceId}</h2>
-
           </div>
      );
 };
