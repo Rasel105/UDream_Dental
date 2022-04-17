@@ -3,6 +3,8 @@ import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import './Login.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Login = () => {
@@ -27,6 +29,7 @@ const Login = () => {
           const email = emailRef.current.value;
           const password = passwordRef.current.value;
           signInWithEmailAndPassword(email, password);
+          toast("Login Successfully!");
      }
 
      return (
@@ -41,7 +44,7 @@ const Login = () => {
                          <div className="field-group">
                               <label className="label" htmlFor="txt-password">Password</label>
                               <input className="input" ref={passwordRef} type="password" id="txt-password" name="password" placeholder="Enter password" />
-                              <a href="#forgot" className="link-forgot">Forgot?</a>
+                              <p href="#forgot" className="link-forgot">Forgot?</p>
                          </div>
 
                          <div className="field-group">
@@ -53,6 +56,7 @@ const Login = () => {
                          <small className="link-about">Don't have an account?</small>
                          <Link to="/register" className="link-register">Register</Link>
                     </div>
+                    <ToastContainer />
                </div>
           </div>
      );

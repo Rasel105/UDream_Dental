@@ -33,7 +33,7 @@ const Header = () => {
                                    <Nav.Link>
                                         {
                                              user ?
-                                                  <a onClick={hanldeSignOut}>Logout</a>
+                                                  <p onClick={hanldeSignOut}>Logout</p>
                                                   :
                                                   <Link style={{ textDecoration: "none", color: "white" }} to='/login'>Login</Link>
                                         }

@@ -3,7 +3,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init'
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import Loading from '../../Shared/Loading/Loading';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Register = () => {
      const nameRef = useRef('');
@@ -32,6 +33,7 @@ const Register = () => {
           const email = emailRef.current.value;
           const password = passwordRef.current.value;
           createUserWithEmailAndPassword(email, password);
+          toast("Registation Successful!");
      }
 
      return (
@@ -50,7 +52,7 @@ const Register = () => {
                          <div className="field-group">
                               <label className="label" htmlFor="password">Password</label>
                               <input className="input" ref={passwordRef} type="password" id="password" name="password" required placeholder="Enter password" />
-                              <a href="#forgot" className="link-forgot">Forgot?</a>
+                              <p href="#forgot" className="link-forgot">Forgot?</p>
                          </div>
                          <div className="field-group">
                               <label className="label" htmlFor="confirm-password">Confirm Password</label>
@@ -67,6 +69,7 @@ const Register = () => {
                          <small className="link-about">Have an account?</small>
                          <Link to="/login" className="link-register">Login</Link>
                     </div>
+                    <ToastContainer />
                </div>
           </div>
      )
