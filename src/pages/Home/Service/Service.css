@@ -1,0 +1,6 @@
+.test {
+     border-radius: 25px;
+     background: #d0e8ec;
+     box-shadow: 35px 35px 72px #90a0a3,
+          -35px -35px 72px #ffffff;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import './Service.css'
 
 const Service = ({ service }) => {
      const { id, service_name, price, img, description } = service;
@@ -8,7 +9,7 @@ const Service = ({ service }) => {
           navigate(`/checkout/${id}`)
      }
      return (
-          <div className="card p-2 p-2 border-1 rounded-5">
+          <div className="card p-2 p-2 border-1 test ">
                <img style={{ height: "200px", borderRadius: "10px" }} src={img} alt="" />
                <div className="card-body">
                     <h4 className="card-title">{service_name}</h4>

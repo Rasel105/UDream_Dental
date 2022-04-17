@@ -12,7 +12,7 @@ const Services = () => {
      return (
           <div id='services' className='container'>
                <div className='row'>
-                    <h2 className='text-center text-primary my-4'>Services</h2>
+                    <h2 className='text-center text-primary my-4 underline'>Services</h2>
                     <div className='services-container'>
                          {
                               services.map(service => <Service
