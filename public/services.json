@@ -3,38 +3,35 @@
     "id": 1,
     "service_name": "Radiographs",
     "img": "https://i.ibb.co/zSmZm7h/service-radiograph.jpg",
-    "description": "Apple is reportedly planning to declare three models of MacBook obsolete in April. MacRumors reports that Apple is going to add the 11-inch MacBook Air, 13-inch MacBook Air, and 13-inch MacBook Pro models released in early 2014 to its obsolete products list this month. The move would hardly come as a surprise. Apple has released new versions of the 13-inch MacBook Air and MacBook Pro—most notably with its custom silicon—in the last eight years.",
+    "description": "Some people wonder if dental radiographs are safe because they expose the patient radiation. Several factors and practices work together to make dental radiography safe. The amount of radiation used to obtain dental radiographs is very small If you are seeing a new dentist, be sure to provide him or her with copies of your existing radiographs to avoid duplicating them",
     "price": "580"
   },
   {
     "id": 2,
     "service_name": "Teeth Cleaning",
     "img": "https://i.ibb.co/wCpkQ7B/teeth-cleaning.jpg",
-    "description": "Apple is thought to be planning a new, larger model of the MacBook Air, which will be released alongside an updated 13-inch model in late 2023. As 9To5Mac reports, the prediction comes from Display Supply Chain Consultants (DSCC), which just released its Quarterly Advanced IT Display Shipment and Technology report. The report suggests that Apple is planning to increase the size of the display in the 13.3-inch MacBook Air, but it would still remain under 14 inches.",
+    "description": "Many people dread teeth cleanings. Between the prodding, strange noises, and occasional jaw discomfort, it's easy to understand their apprehension. But for most, a teeth cleaning is simple and painless. Knowing exactly what is going on during the process can help ease your stress and allow you to better enjoy the minty-fresh results.",
     "price": "648"
   },
   {
     "id": 3,
     "service_name": "Sports Guards",
     "img": "https://i.ibb.co/W5QZYPm/white-teeth.jpg",
-    "description": "Apple's M1 silicon debuted to great fanfare a year ago, infusing the entry-level 2020 MacBook Air with extraordinary computing power for a laptop of its size and price. At the time, the 13-inch MacBook Pro rang up as the lesser value, since it cost more but used the same M1 processor that the MacBook Air did. Apple now changes the equation—and opens up the Pro to a wider swath of content pros—with the 14-inch MacBook Pro (starts at $1,999; $2,899 as tested). ",
+    "description": "There are three types of mouthguards. Your athlete's dental professional can help you make the right choice. At any rate, the mouthguard must be resilient, tear-resistant, and comfortable. Fit is also important. It should not restrict speech or breathing. Here are the three types of mouthguards:",
     "price": "980"
   },
-  
   {
     "id": 4,
     "service_name": "Teeth Implant",
     "img": "https://i.ibb.co/G0L9bSK/Teeth-Implant.jpg",
-    "description": "Apple's M1 silicon debuted to great fanfare a year ago, infusing the entry-level 2020 MacBook Air with extraordinary computing power for a laptop of its size and price. At the time, the 13-inch MacBook Pro rang up as the lesser value, since it cost more but used the same M1 processor that the MacBook Air did. Apple now changes the equation—and opens up the Pro to a wider swath of content pros—with the 14-inch MacBook Pro (starts at $1,999; $2,899 as tested). ",
+    "description": "Dental implants are replacement tooth roots. Implants provide a strong foundation for fixed (permanent) or removable replacement teeth that are made to match your natural teeth. Success rates of dental implants vary, depending on where in the jaw the implants are placed but, in general, dental implants have a success rate of up to 98%. With proper care (see below), implants can last a lifetime.",
     "price": "790"
   },
-  
   {
     "id": 5,
     "service_name": "Teeth Filling",
     "img": "https://i.ibb.co/CV2RCrT/Teeth-Filling.jpg",
-    "description": "Apple's M1 silicon debuted to great fanfare a year ago, infusing the entry-level 2020 MacBook Air with extraordinary computing power for a laptop of its size and price. At the time, the 13-inch MacBook Pro rang up as the lesser value, since it cost more but used the same M1 processor that the MacBook Air did. Apple now changes the equation—and opens up the Pro to a wider swath of content pros—with the 14-inch MacBook Pro (starts at $1,999; $2,899 as tested). ",
+    "description": "A tooth filling is a procedure wherein the damaged and decayed part of a tooth is removed and the area is filled with a replacement material to protect against further damage and to restore the tooth's appearance and function. The replacement material, which is called the filling, can be made out of gold, silver amalgam, composite resin, glass ionomer, or porcelain. ",
     "price": "860"
   }
-  
 ]

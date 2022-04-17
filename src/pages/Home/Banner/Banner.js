@@ -15,7 +15,7 @@ const Banner = () => {
                          />
                          <Carousel.Caption>
                               <h3>Friendly Gentle Dentist</h3>
-                              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                              <p>Every tooth in a man's head is more valuable than a diamond.</p>
                          </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -25,8 +25,8 @@ const Banner = () => {
                               alt="Second slide"
                          />
                          <Carousel.Caption>
-                              <h3>Second slide label</h3>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                              <h3>Possible Risk From Dental Fillings.</h3>
+                              <p>A dentist at work in his vocation always looks down in the mouth.</p>
                          </Carousel.Caption>
                     </Carousel.Item>
                </Carousel>
