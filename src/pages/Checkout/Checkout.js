@@ -1,10 +1,13 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { ToastContainer } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Checkout = () => {
      const { serviceId } = useParams();
-
+     const handleCheckOut = () => {
+          toast("Thank You! for the booking");
+     }
      return (
           <div>
                <div className="content-body">
@@ -28,7 +31,7 @@ const Checkout = () => {
                                    <input className="input" type="number" id="phone" name="phone" required placeholder="Enter phone" />
                               </div>
                               <div className="field-group">
-                                   <input className="btn-submit" type="submit" value="Submit" />
+                                   <input onClick={handleCheckOut} className="btn-submit" type="submit" value="Submit" />
                               </div>
                          </form>
                          <ToastContainer />

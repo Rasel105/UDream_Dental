@@ -17,7 +17,7 @@ const Service = ({ service }) => {
                     <p>{description}</p>
                </div>
                <p className="btn w-100 px-4 mx-auto">
-                    <input onClick={() => navigateServiceDetails(id)} type="submit" className="btn btn-dark btn-lg w-100" name="add-button" value="Buy Now" />
+                    <input onClick={() => navigateServiceDetails(id)} type="submit" className="btn btn-dark btn-lg w-100" name="add-button" value="Meet me" />
                </p>
           </div>
 

@@ -3,7 +3,7 @@ import google from '../../../images/social/google_logo.png'
 import github from '../../../images/social/github_logo.png'
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import Loading from '../../Shared/Loading/Loading';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -11,6 +11,8 @@ import 'react-toastify/dist/ReactToastify.css';
 const SocialLogin = () => {
      const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
      const navigate = useNavigate();
+     const location = useLocation();
+     const from = location.state?.from?.pathname || "/";
      const hanldeSignInWithGoogle = () => {
           signInWithGoogle();
      }
@@ -23,8 +25,8 @@ const SocialLogin = () => {
           return <Loading />
      }
      if (user) {
-          navigate('/home')
-          toast("Sign In successfully");
+          navigate(from, { replace: true });
+          // toast("Sign In successfully");
      }
      return (
           <div >
