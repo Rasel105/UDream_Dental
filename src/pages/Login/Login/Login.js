@@ -1,5 +1,5 @@
-import React, { useRef } from 'react';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import React, { useEffect, useRef } from 'react';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import './Login.css'
@@ -23,9 +23,12 @@ const Login = () => {
           error,
      ] = useSignInWithEmailAndPassword(auth);
 
+     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+
      if (loading) {
           return <Loading />
      }
+
 
      if (user) {
           navigate(from, { replace: true });
@@ -37,7 +40,17 @@ const Login = () => {
           const email = emailRef.current.value;
           const password = passwordRef.current.value;
           signInWithEmailAndPassword(email, password);
+     }
 
+     const hanleForgetPassword = async () => {
+          const email = emailRef.current.value;
+          if (email) {
+               await sendPasswordResetEmail(email);
+               toast("Sent email");
+          }
+          else {
+               toast("Please enter your email address");
+          }
      }
 
      return (
@@ -52,11 +65,11 @@ const Login = () => {
                          <div className="field-group">
                               <label className="label" htmlFor="txt-password">Password</label>
                               <input className="input" ref={passwordRef} type="password" id="txt-password" name="password" placeholder="Enter password" />
-                              <p href="#forgot" className="link-forgot">Forgot?</p>
                          </div>
 
                          <div className="field-group">
                               <input className="btn-submit" type="submit" value="Log In" />
+                              <p onClick={hanleForgetPassword} className="mt-3 mb-0 text-danger" style={{ cursor: "pointer" }}>Forgot?</p>
                          </div>
                     </form>
 
