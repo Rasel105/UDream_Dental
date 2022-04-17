@@ -1,21 +1,46 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useRef } from 'react';
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { Link, useNavigate } from 'react-router-dom';
+import auth from '../../../firebase.init';
 import './Login.css'
 
 
 const Login = () => {
+     const emailRef = useRef('');
+     const passwordRef = useRef('');
+     const navigate = useNavigate();
+
+     const [
+          signInWithEmailAndPassword,
+          user,
+          loading,
+          error,
+     ] = useSignInWithEmailAndPassword(auth);
+
+     if (user) {
+          navigate('/home')
+     }
+
+
+     const hanleLoginSubmit = event => {
+          event.preventDefault();
+          const email = emailRef.current.value;
+          const password = passwordRef.current.value;
+          signInWithEmailAndPassword(email, password);
+     }
+
      return (
           <div className="content-body">
                <div className="form-wrapper">
-                    <form className="bg-white">
+                    <form onSubmit={hanleLoginSubmit} className="bg-white">
                          <h1 className="text-title">Login</h1>
                          <div className="field-group">
                               <label className="label" htmlFor="txt-email">Email address</label>
-                              <input className="input" type="email" id="txt-email" name="email" placeholder="udreamdental@gmail.com" />
+                              <input className="input" ref={emailRef} type="email" id="txt-email" name="email" placeholder="udreamdental@gmail.com" />
                          </div>
                          <div className="field-group">
                               <label className="label" htmlFor="txt-password">Password</label>
-                              <input className="input" type="password" id="txt-password" name="password" placeholder="Enter password" />
+                              <input className="input" ref={passwordRef} type="password" id="txt-password" name="password" placeholder="Enter password" />
                               <a href="#forgot" className="link-forgot">Forgot?</a>
                          </div>
 
