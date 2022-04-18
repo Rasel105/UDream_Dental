@@ -6,6 +6,7 @@ import Loading from '../../Shared/Loading/Loading';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { BoxArrowRight } from 'react-bootstrap-icons';
+import { BoxArrowLeft } from 'react-bootstrap-icons';
 import { Button } from 'react-bootstrap';
 
 const Register = () => {
@@ -75,7 +76,7 @@ const Register = () => {
 
                          <div className="field-group">
                               {/* <input className="btn-submit" type="submit" value="Register" /> */}
-                              <Button className="btn-submit" type="submit" value="Log In"> Register <BoxArrowRight className='ms-1' size={25} /></Button>
+                              <Button className="btn-submit" type="submit" value="Log In"> Register <BoxArrowLeft className='ms-1' size={25} /></Button>
                          </div>
                     </form>
 

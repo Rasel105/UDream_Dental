@@ -8,6 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import { BoxArrowInLeft } from 'react-bootstrap-icons';
+import { BoxArrowRight } from 'react-bootstrap-icons';
 import { Button } from 'react-bootstrap';
 
 const Login = () => {
@@ -84,7 +85,7 @@ const Login = () => {
 
                     <div className="bg-grey">
                          <small className="link-about">Don't have an account?</small>
-                         <Link to="/register" className="link-register">Register <BoxArrowInLeft className='ms-2' size={25} /></Link>
+                         <Link to="/register" className="link-register">Register <BoxArrowRight className='ms-2' size={25} /></Link>
                     </div>
                     <ToastContainer />
                </div >
