@@ -5,6 +5,8 @@ import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import Loading from '../../Shared/Loading/Loading';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { BoxArrowRight } from 'react-bootstrap-icons';
+import { Button } from 'react-bootstrap';
 
 const Register = () => {
      const nameRef = useRef('');
@@ -72,13 +74,15 @@ const Register = () => {
                          </div>
 
                          <div className="field-group">
-                              <input className="btn-submit" type="submit" value="Register" />
+                              {/* <input className="btn-submit" type="submit" value="Register" /> */}
+                              <Button className="btn-submit" type="submit" value="Log In"> Register <BoxArrowRight className='ms-1' size={25} /></Button>
                          </div>
                     </form>
 
                     <div className="bg-grey">
                          <small className="link-about">Have an account?</small>
-                         <Link to="/login" className="link-register">Login</Link>
+                         {/* <Link to="/login" className="link-register">Login</Link> */}
+                         <Link to="/login" className="link-register">Login <BoxArrowRight className='ms-2' size={25} /></Link>
                     </div>
                     <ToastContainer />
                </div>

@@ -7,7 +7,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
-import { BoxArrowRight } from 'react-bootstrap-icons';
+import { BoxArrowInLeft } from 'react-bootstrap-icons';
 import { Button } from 'react-bootstrap';
 
 const Login = () => {
@@ -60,7 +60,7 @@ const Login = () => {
      }
 
      return (
-          <div className="content-body">
+          <div className="content-body my-3">
                <div className="form-wrapper">
                     <form onSubmit={hanleLoginSubmit} className="bg-white">
                          <h1 className="text-title">Login</h1>
@@ -74,7 +74,7 @@ const Login = () => {
                          </div>
 
                          <div className="field-group">
-                              <Button className="btn-submit" type="submit" value="Log In"> Log In</Button>
+                              <Button className="btn-submit" type="submit" value="Log In"> Log In <BoxArrowInLeft className='ms-1' size={25} /></Button>
                               {/* <input className="btn-submit" type="submit" value="Log In" /> */}
 
                               {errorElement}
@@ -84,7 +84,7 @@ const Login = () => {
 
                     <div className="bg-grey">
                          <small className="link-about">Don't have an account?</small>
-                         <Link to="/register" className="link-register">Register</Link>
+                         <Link to="/register" className="link-register">Register <BoxArrowInLeft className='ms-2' size={25} /></Link>
                     </div>
                     <ToastContainer />
                </div >

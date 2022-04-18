@@ -7,7 +7,7 @@ const Footer = () => {
      const time = new Date();
      return (
           <div>
-               <footer className='bg-color text-white row d-flex justify-content-center align-items-center p-5'>
+               <footer className='bg-color text-white row d-flex justify-content-center align-items-center p-3'>
                     <div className='col-md-6 text-center footer-style container'>
                          <Link to="/">Home </Link>
                          <Link to="/aboutme">About Me</Link>
