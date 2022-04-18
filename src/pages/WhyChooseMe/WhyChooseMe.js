@@ -1,13 +1,16 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
+import Available from '../../images/services/24.png';
+import Experience from '../../images/services/experience.png'
+import flexible from '../../images/services/flexiblepament.jpg'
 
 const WhyChooseMe = () => {
      return (
           <div className='container mb-5'>
-               <h2 className='text-center my-5'>Why Choose Me</h2>
+               <h2 className='text-center my-5 text-primary'>Why Choose Me</h2>
                <div className='d-flex justify-content-center row gap-3 mx-auto'>
-                    <Card className='col-md-4 col-sm-12' style={{ width: '22rem' }}>
-                         <Card.Img variant="top" />
+                    <Card className='col-md-4 col-sm-12 box-shadow' style={{ width: '22rem' }}>
+                         <Card.Img variant="top" src={Available} />
                          <Card.Body>
                               <Card.Title className='text-info text-center fs-2'>24 / 7 Emergency</Card.Title>
                               <Card.Text>
@@ -15,8 +18,8 @@ const WhyChooseMe = () => {
                               </Card.Text>
                          </Card.Body>
                     </Card>
-                    <Card className='col-md-4 col-sm-12' style={{ width: '22rem' }}>
-                         <Card.Img variant="top" />
+                    <Card className='col-md-4 col-sm-12 box-shadow' style={{ width: '22rem' }}>
+                         <Card.Img variant="top" src={Experience} />
                          <Card.Body>
                               <Card.Title className='text-info text-center fs-2'>15 year of Exprience</Card.Title>
                               <Card.Text>
@@ -24,8 +27,8 @@ const WhyChooseMe = () => {
                               </Card.Text>
                          </Card.Body>
                     </Card>
-                    <Card className='col-md-4 col-sm-12' style={{ width: '22rem' }}>
-                         <Card.Img variant="top" />
+                    <Card className='col-md-4 col-sm-12 box-shadow' style={{ width: '22rem' }}>
+                         <Card.Img variant="top" src={flexible} />
                          <Card.Body>
                               <Card.Title className='text-info text-center fs-2'>
                                    Flexible Payment</Card.Title>

@@ -15,9 +15,7 @@ const About = () => {
                               <Card.Text>
                                    <span className='text-primary display-4'>Goal:</span>
                                    The profession of software engineers is really cool and full of challenges, the aim to build or develop the applications is like the challenges that every software developer faced during his/her field.
-
-                                   Increasing my performance metrics are concerned with how efficient you are at work.
-
+                                   Well, I have working on it to be Software Developer since from the 3 year in my college. Insha Allah, my Goal come to me within a very short time.
                               </Card.Text>
                          </Card.Body>
                     </Card>

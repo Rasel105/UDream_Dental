@@ -7,7 +7,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
-
+import { BoxArrowRight } from 'react-bootstrap-icons';
+import { Button } from 'react-bootstrap';
 
 const Login = () => {
      const emailRef = useRef('');
@@ -73,7 +74,8 @@ const Login = () => {
                          </div>
 
                          <div className="field-group">
-                              <input className="btn-submit" type="submit" value="Log In" />
+                              <Button className="btn-submit" type="submit" value="Log In"> Log In</Button>
+                              {/* <input className="btn-submit" type="submit" value="Log In" /> */}
 
                               {errorElement}
                               <p onClick={hanleForgetPassword} className="mt-3 mb-0 text-danger" style={{ cursor: "pointer" }}>Forgot?</p>
@@ -85,9 +87,9 @@ const Login = () => {
                          <Link to="/register" className="link-register">Register</Link>
                     </div>
                     <ToastContainer />
-               </div>
+               </div >
                <SocialLogin />
-          </div>
+          </div >
 
      );
 };

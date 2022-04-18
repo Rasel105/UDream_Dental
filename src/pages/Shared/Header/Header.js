@@ -7,6 +7,8 @@ import auth from '../../../firebase.init';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import CustomLink from '../CustomLink/CustomLink';
+import { BoxArrowRight } from 'react-bootstrap-icons';
+import { BoxArrowInLeft } from 'react-bootstrap-icons';
 
 const Header = () => {
      const [user] = useAuthState(auth);
@@ -30,16 +32,16 @@ const Header = () => {
                                    <Nav.Link className="fs-5" as={CustomLink} to="/service">Services</Nav.Link>
                                    <Nav.Link className="fs-5" as={CustomLink} to="/blog">Blogs</Nav.Link>
                               </Nav>
-                              <Nav>
+                              <Nav className='d-flex justify-content-center align-items-center'>
                                    <Nav.Link className="fs-5" as={CustomLink} to='/aboutme'>
                                         About Me
                                    </Nav.Link>
                                    <Nav.Link>
                                         {
                                              user ?
-                                                  <p className="fs-5" onClick={hanldeSignOut}>Logout</p>
+                                                  <p className="fs-5  mb-0 text-white" onClick={hanldeSignOut}>Logout <BoxArrowRight className='mx-1' color="white" size={25} /> </p>
                                                   :
-                                                  <CustomLink to='/login' className="fs-5">Login</CustomLink >
+                                                  <CustomLink to='/login' className="fs-5 ">Login <BoxArrowInLeft className='mx-1' color="white" size={25} /></CustomLink >
                                         }
                                    </Nav.Link>
                               </Nav>
