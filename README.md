@@ -1,70 +1,17 @@
-# Getting Started with Create React App
+# Explore UDreamDental
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ # You can see Live Web Preview of [UDreamDental](https://assignment-0010.web.app/).
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* The name of of the Project is UDreamDental
+* In this project I have use, React, React Router, React Firebase hooks, React Toastify, React Boostrap, Vanilla CSS. Boostrap and so on...
+* Where I created a Navbar which has 5 link With Custom link when you click A link then it'll show a green color.
+* The Navbar has a logo, servicec, blogs, About me and Login
+* After that the below of navbar I have a Carosel with 2 image sliding atomatically.
+* Near Carosel I have Service section the service section has 5 cards with the value of images, name of the service, price, description and a "Meet me" Button, if anybody choose a service then click the "Meet me" button it will redirect to the "Checkout" page if he/she logged in,  otherwise it will redirect to the  login page. after log in it will directly redirect to the "Chectout page.
+* In the Checkout page where I created a checkout form if use choose a sevice.
+* Near service section I have "Why choose me" section, the section has 3 card about my self.
+* After that I created a Home section, Where at the top lebel there is project name then project title and then a A Explore Button. then the Right side corner You can see a Image.
+* After that I made Blogs Section Where I Answered 3 Questions ans.
+* and then the Navsection has a About me Button, the about me section where a image myself, my name, and short of Goal in my future. 
+* And the I have Login Button in the right corner of Nav section.. Where use can toggle the use the Register components and Login components. in login page, if use forget password use can Reset his/her password. and also use can Sign in with google.
+* Last but not the List, in the bottom of the every page. I have simple Footer...
