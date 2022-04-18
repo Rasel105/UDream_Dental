@@ -19,7 +19,7 @@ const WhyChooseMe = () => {
                          </Card.Body>
                     </Card>
                     <Card className='col-md-4 col-sm-12 box-shadow' style={{ width: '22rem' }}>
-                         <Card.Img variant="top" src={Experience} />
+                         <Card.Img className='mt-2' variant="top" src={Experience} />
                          <Card.Body>
                               <Card.Title className='text-info text-center fs-2'>15 year of Exprience</Card.Title>
                               <Card.Text>

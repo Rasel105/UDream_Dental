@@ -36,10 +36,11 @@ const Header = () => {
                                    <Nav.Link className="fs-5" as={CustomLink} to="/service">Services</Nav.Link>
                                    <Nav.Link className="fs-5" as={CustomLink} to="/blog">Blogs</Nav.Link>
                               </Nav>
-                              <Nav className='d-flex justify-content-center align-items-center'>
+                              <Nav>
                                    <Nav.Link className="fs-5" as={CustomLink} to='/aboutme'>
                                         About Me
                                    </Nav.Link>
+                                   <Nav.Link className="fs-5" as={CustomLink} to="/register">Register <BoxArrowRight className='mx-1' color="white" size={25} /> </Nav.Link>
                                    <Nav.Link>
                                         {
                                              user ?
@@ -48,6 +49,7 @@ const Header = () => {
                                                   <CustomLink to='/login' className="fs-5 ">Login <BoxArrowInLeft className='mx-1' color="white" size={25} /></CustomLink >
                                         }
                                    </Nav.Link>
+
                               </Nav>
                          </Navbar.Collapse>
                          <ToastContainer />
