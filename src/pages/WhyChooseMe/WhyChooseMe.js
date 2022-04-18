@@ -20,8 +20,7 @@ const WhyChooseMe = () => {
                          <Card.Body>
                               <Card.Title className='text-info text-center fs-2'>15 year of Exprience</Card.Title>
                               <Card.Text>
-                                   Some quick example text to build on the card title and make up the bulk of
-                                   the card's content.
+                                   I know how important it is to find the right dentist for your family. I also realize that hearing from other patients just like you is an essential part of learning more about my services.
                               </Card.Text>
                          </Card.Body>
                     </Card>
@@ -31,8 +30,7 @@ const WhyChooseMe = () => {
                               <Card.Title className='text-info text-center fs-2'>
                                    Flexible Payment</Card.Title>
                               <Card.Text>
-                                   Some quick example text to build on the card title and make up the bulk of
-                                   the card's content.
+                                   I recognize that not everyone has dental insurance. I am proud to offer my patients flexible financing and payment options, so that you can get the treatment you need at a price suitable for you.
                               </Card.Text>
                          </Card.Body>
                     </Card>
