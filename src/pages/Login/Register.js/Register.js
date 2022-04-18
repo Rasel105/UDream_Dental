@@ -32,9 +32,20 @@ const Register = () => {
           event.preventDefault();
           const email = emailRef.current.value;
           const password = passwordRef.current.value;
-          createUserWithEmailAndPassword(email, password);
-          toast("Registation Successful!");
-          toast("Email Varification sent")
+          const confrimPassword = confirmPasswordRef.current.value;
+
+          // if () {
+          //      toast("Password must be six digit long.")
+          // }
+
+          if (password !== confrimPassword || password.length < 6) {
+               toast(" Password must be six digit long or  Password didn't match.")
+          } else {
+               createUserWithEmailAndPassword(email, password);
+               toast("Registation Successful!");
+               toast("Email Varification sent!")
+          }
+
      }
 
      return (
@@ -53,7 +64,6 @@ const Register = () => {
                          <div className="field-group">
                               <label className="label" htmlFor="password">Password</label>
                               <input className="input" ref={passwordRef} type="password" id="password" name="password" required placeholder="Enter password" />
-                              <p href="#forgot" className="link-forgot">Forgot?</p>
                          </div>
                          <div className="field-group">
                               <label className="label" htmlFor="confirm-password">Confirm Password</label>
