@@ -20,6 +20,7 @@ const Footer = () => {
 
                          </div>
                          <div className='col-md-6 col-sm-12  p-3 text-center'>
+                              <h3 className='text-info'>Find me</h3>
                               <Facebook className='ms-3 hoverefect' size={30} color={"#3b5998"} />
                               <Youtube className='ms-4' size={30} color={"#FF0000"} />
                               <Google className='ms-4' size={30} color={"#4285F4"} />

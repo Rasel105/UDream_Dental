@@ -52,9 +52,11 @@ const Header = () => {
 
                               </Nav>
                          </Navbar.Collapse>
-                         <ToastContainer />
+
                     </Container>
+                    <ToastContainer />
                </Navbar>
+
           </div>
      );
 };
