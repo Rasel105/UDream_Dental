@@ -31,6 +31,8 @@ const Register = () => {
           navigate('/home')
      }
 
+     // handle register form submit 
+
      const handleFormSubmit = event => {
           event.preventDefault();
           const email = emailRef.current.value;
@@ -41,10 +43,13 @@ const Register = () => {
           //      toast("Password must be six digit long.")
           // }
 
+          // showing errors
+
           if (password !== confrimPassword || password.length < 6) {
                toast(" Password must be six digit long or  Password didn't match.")
           } else {
                createUserWithEmailAndPassword(email, password);
+               //successfull toasts
                toast("Registation Successful!");
                toast("Email Varification sent!")
           }

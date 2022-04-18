@@ -10,16 +10,16 @@ const Footer = () => {
      const time = new Date();
      return (
           <div>
-               <footer >
+               <footer>
                     <div className='d-flex justify-content-between align-items-center'>
-                         <div className='col-md-6 text-center footer-style '>
+                         <div className='col-md-6 col-sm-12 text-center footer-style '>
                               <Link to="/">Home </Link>
                               <Link to="/aboutme">About Me</Link>
                               <Link to="/service">Services</Link>
                               <Link to="/blog">Blogs</Link>
 
                          </div>
-                         <div className='col-md-6 p-3 text-center'>
+                         <div className='col-md-6 col-sm-12  p-3 text-center'>
                               <Facebook className='ms-3 hoverefect' size={30} color={"#3b5998"} />
                               <Youtube className='ms-4' size={30} color={"#FF0000"} />
                               <Google className='ms-4' size={30} color={"#4285F4"} />

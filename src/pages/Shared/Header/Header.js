@@ -13,8 +13,12 @@ import { BoxArrowInLeft } from 'react-bootstrap-icons';
 const Header = () => {
      const [user] = useAuthState(auth);
 
+     //handle signout with hooks
+
      const hanldeSignOut = () => {
           signOut(auth);
+
+          // showing toast 
           toast("Signout Successfully!");
      };
 

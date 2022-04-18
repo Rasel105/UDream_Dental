@@ -12,6 +12,7 @@ import { BoxArrowRight } from 'react-bootstrap-icons';
 import { Button } from 'react-bootstrap';
 
 const Login = () => {
+     //take data from input field
      const emailRef = useRef('');
      const passwordRef = useRef('');
      const navigate = useNavigate();
@@ -26,6 +27,8 @@ const Login = () => {
      ] = useSignInWithEmailAndPassword(auth);
 
      const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+
+     // showing loading 
 
      if (loading) {
           return <Loading />
@@ -44,10 +47,14 @@ const Login = () => {
           signInWithEmailAndPassword(email, password);
      }
 
+     // errors
+
      let errorElement;
      if (error) {
           errorElement = <p className='text-danger'>Error: {error?.message}</p>
      }
+
+     // handle foreget password
 
      const hanleForgetPassword = async () => {
           const email = emailRef.current.value;
